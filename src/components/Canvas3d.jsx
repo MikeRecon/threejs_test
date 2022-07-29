@@ -1,6 +1,6 @@
 import React, { useRef, Suspense, useEffect, useState, useMemo } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { Center, ContactShadows, Environment, OrbitControls, useGLTF } from '@react-three/drei'
+import { Center, Environment, OrbitControls, useGLTF } from '@react-three/drei'
 import { FabricJSCanvas, useFabricJSEditor } from 'fabricjs-react'
 import { fabric } from 'fabric'
 import * as THREE from 'three'
@@ -67,7 +67,8 @@ function Model({ color }) {
     };
 
     useMemo(() => {
-        materials.Primary.color.set("#ff0000")
+        
+        materials.Extra.color.set("#ff0000")
 
     }, [materials])
 
