@@ -164,10 +164,8 @@ svgload()
         img.resizeFilter = new fabric.Image.filters.Resize({ resizeType: 'hermite' });
 
         //  img.filters.push(new fabric.Image.filters.Grayscale());
-
-        // apply filters and re-render canvas when done
         img.applyFilters();
-        // img.scale(.25)
+      
         editor.canvas.add(img);
 
         editor.canvas.renderAll()
